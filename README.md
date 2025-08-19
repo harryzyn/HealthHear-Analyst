@@ -50,7 +50,7 @@ Analisis dari dataset survei menghasilkan beberapa kesimpulan kunci:
 
 * **Pola Penggunaan Tinggi:** Sebagian besar audiens, terutama Gen Z, adalah *heavy user* perangkat audio personal, dengan penggunaan harian rata-rata antara 1-4 jam.
 * **Sinyal Fisik Diabaikan:** Terdapat korelasi kuat antara durasi penggunaan dan munculnya ketidaknyamanan fisik, namun hambatan terbesar untuk mencari solusi bukanlah biaya atau waktu, melainkan **rendahnya kesadaran dan prioritas**.
-* **Rasa Sakit sebagai Motivator:** Segmen audiens yang sudah merasakan nyeri ("Si Sadar") menunjukkan minat yang **jauh lebih tinggi** terhadap fitur-fitur aplikasi proaktif dibandingkan dengan mereka yang belum merasakan nyeri.
+* **Rasa Sakit sebagai Motivator:** Segmen audiens yang sudah merasakan nyeri menunjukkan minat yang **jauh lebih tinggi** terhadap fitur-fitur aplikasi proaktif dibandingkan dengan mereka yang belum merasakan nyeri.
 * **Implikasi Strategis:** Peluang terbesar terletak pada pengembangan solusi digital (seperti aplikasi kesehatan) yang mudah diakses, proaktif, dan terintegrasi dalam gaya hidup digital Gen Z.
 
 ---

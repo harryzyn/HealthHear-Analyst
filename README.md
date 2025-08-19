@@ -4,15 +4,13 @@
 
 Tujuan utamanya adalah bagaimana mengelola data mentah dari survei agar dapat, dianalisis, dan disintesis menjadi *insight* strategis yang dapat ditindaklanjuti.
 
-**![Demo Website Audio Generation Report](asset/web.gif) **
+![Demo Website Audio Generation Report](asset/web.gif) 
 
----
 
 ## ✨ Demo Live
 
 **[--> Kunjungi Versi Live di Sini <--](https://health-hear-analyst-pdnk9q0rm-harryzyns-projects.vercel.app)**
 
----
 
 ## 🎯 Tujuan Proyek
 Proyek ini dirancang untuk mengeksplor kemampuan dalam:
@@ -29,7 +27,7 @@ Proyek ini dirancang untuk mengeksplor kemampuan dalam:
 Dataset yang digunakan berasal dari survei publik "2025 Hearing Wellness Survey" dengan total **382 responden (N=382)**. Seluruh proses pembersihan data, eksplorasi, dan analisis awal dilakukan menggunakan Python (Pandas, Matplotlib, Seaborn) di dalam Google Colab.
 
 ### Lihat Proses EDA Lengkap
-**[>>> Google Colab: Exploratory Data Analysis <<<](https://colab.research.google.com/drive/1W8PP0yO4JTvm0Bo31Y_vlVp13aLs9TVJ)**
+**[--> Google Colab: Exploratory Data Analysis <--](https://colab.research.google.com/drive/1W8PP0yO4JTvm0Bo31Y_vlVp13aLs9TVJ)**
 
 ---
 
@@ -74,5 +72,5 @@ Analisis dari dataset survei menghasilkan beberapa kesimpulan kunci:
 ## 📬 Hubungi Saya
 Terima kasih telah mengunjungi proyek ini.
 
-* **LinkedIn:** [Link ke Profil LinkedIn](https://www.linkedin.com/in/harry-muzayin-b7758729a/)
-* **Email:** [Email ] (ahmadharry.muzayin@students.esqbs.ac.id)
+* **LinkedIn:** [Linked in](https://www.linkedin.com/in/harry-muzayin-b7758729a/)
+* **Email:** ahmadharry.muzayin@students.esqbs.ac.id

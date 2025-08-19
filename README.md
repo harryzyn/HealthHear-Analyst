@@ -1,6 +1,6 @@
 # 🎧 The Audio Generation Report: A Data Storytelling Portfolio
 
-Selamat datang di repositori "The Audio Generation Report". Proyek ini bukan sekadar website, melainkan sebuah demonstrasi **alur kerja analisis data* yang disajikan dalam format *data storytelling* yang naratif dan interaktif.
+ "The Audio Generation Report" bukan sekadar website, melainkan sebuah demonstrasi **alur kerja analisis data* yang disajikan dalam format *data storytelling* yang naratif dan interaktif.
 
 Tujuan utamanya adalah bagaimana mengelola data mentah dari survei agar dapat, dianalisis, dan disintesis menjadi *insight* strategis yang dapat ditindaklanjuti.
 
@@ -10,7 +10,7 @@ Tujuan utamanya adalah bagaimana mengelola data mentah dari survei agar dapat, d
 
 ## ✨ Demo Live
 
-**[>>> Kunjungi Versi Live di Sini <<<]([Link-ke-Vercel-atau-GitHub-Pages-Anda])**
+**[--> Kunjungi Versi Live di Sini <--]([Link-ke-Vercel-atau-GitHub-Pages-Anda])**
 
 ---
 

@@ -1,4 +1,3 @@
-/* --- GAYA GLOBAL --- */
 :root {
     --bg-color: #121212;
     --text-color: #EAEAEA;
@@ -28,7 +27,6 @@ body {
     padding: 0;
 }
 
-/* --- PENAMPUNG ANIMASI LATAR & PARTIKEL --- */
 .background-animation {
     position: absolute;
     top: 0;
@@ -56,7 +54,6 @@ body {
     border-radius: 50%;
 }
 
-/* --- STRUKTUR SCENE --- */
 .scene {
     min-height: 100vh;
     display: flex;
@@ -104,7 +101,6 @@ strong,
     color: var(--accent-color);
 }
 
-/* --- SCENE 0: SOUND WAVE --- */
 #audio-wave-bg {
     display: flex;
     justify-content: space-between;
@@ -116,7 +112,6 @@ strong,
     background-color: #222;
 }
 
-/* --- SCENE 1: JEJAK MELINGKAR --- */
 #scene1-bg {
     display: flex;
     justify-content: center;
@@ -129,7 +124,6 @@ strong,
     border-radius: 50%;
 }
 
-/* --- SCENE 2: DENYUT SONAR --- */
 #scene2-bg {
     display: flex;
     justify-content: center;
@@ -142,14 +136,12 @@ strong,
     position: absolute;
 }
 
-/* --- SCENE 3: BIDANG GEOMETRIS --- */
 .geo-plane {
     position: absolute;
     background-color: rgba(0, 191, 255, 0.05);
     border: 1px solid #333;
 }
 
-/* --- SCENE 4: MATRIKS DATA --- */
 #scene4-bg {
     display: grid;
     grid-template-columns: repeat(15, 1fr);
@@ -165,7 +157,6 @@ strong,
     transition: background-color 0.5s;
 }
 
-/* --- SCENE 5: NEURAL NETWORK (SVG) --- */
 #scene5-bg svg {
     width: 100%;
     height: 100%;
@@ -371,5 +362,5 @@ footer.scene {
 .github-icon {
     width: 24px;
     height: 24px;
-    fill: currentColor; /* Membuat warna SVG mengikuti warna teks link */
+    fill: currentColor; /
 }

@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     gsap.registerPlugin(ScrollTrigger);
 
-    // --- SETUP SMOOTH SCROLLING ---
     const lenis = new Lenis();
     function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
     requestAnimationFrame(raf);
 
-    // --- FUNGSI & ANIMASI PARTIKEL LATAR ---
     const particleContainer = document.getElementById('particle-container');
     for (let i = 0; i < 50; i++) {
         let particle = document.createElement('div');
@@ -16,12 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     gsap.to(".particle", { y: (i, target) => -document.body.scrollHeight * gsap.getProperty(target, "scale"), ease: "none", scrollTrigger: { trigger: "body", start: "top top", end: "bottom bottom", scrub: 1.5 } });
 
-    // --- FUNGSI PEMBUNGKUS AMAN UNTUK ANIMASI ---
     function safeAnimate(animationFunction) {
         try { animationFunction(); } catch (e) { console.error("Animasi gagal:", e); }
     }
 
-    // --- SCENE 0: SOUND WAVE ---
     safeAnimate(() => {
         const waveContainer = document.getElementById('audio-wave-bg');
         for (let i = 0; i < 100; i++) { waveContainer.appendChild(document.createElement('div')).classList.add('wave-line'); }
@@ -30,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
         gsap.from("#scene0 .prolog-text", { opacity: 0, y: 50, duration: 1.5, delay: 0.5 });
     });
 
-    // --- SCENE 1: ANIMASI UTAMA & LATAR ---
     safeAnimate(() => {
         gsap.from(".hour-block", { scrollTrigger: { trigger: "#scene1", start: "top center", toggleActions: "play none none none" }, opacity: 0, y: 50, stagger: 0.25, duration: 0.8, ease: "back.out(1.7)" });
         const scene1BG = document.getElementById('scene1-bg');
@@ -43,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // --- SCENE 2: ANIMASI UTAMA & LATAR ---
     safeAnimate(() => {
         gsap.timeline({ scrollTrigger: { trigger: "#scene2", start: "top center", end: "center center", scrub: 1 } })
             .to(".head-icon path", { fill: "var(--discomfort-color)" })
@@ -55,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         gsap.fromTo(pulse, { scale: 0, opacity: 0.5 }, { scale: 10, opacity: 0, duration: 4, repeat: -1, ease: "power1.out" });
     });
 
-    // --- SCENE 3: ANIMASI UTAMA & LATAR ---
     safeAnimate(() => {
         gsap.to(["#card-biaya", "#card-waktu"], { scrollTrigger: { trigger: ".barrier-cards", start: "top 60%", end: "top 30%", scrub: 1 }, opacity: 0.4, filter: "blur(1px)", scale: 0.95 });
         const scene3BG = document.getElementById('scene3-bg');
@@ -68,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // --- SCENE 4: ANIMASI UTAMA & LATAR ---
     safeAnimate(() => {
         new Chart(document.getElementById('genZChart').getContext('2d'), { type: 'doughnut', data: { labels: ['Gen Z (18-24)', 'Generasi Lain'], datasets: [{ data: [73.8, 26.2], backgroundColor: ['#00BFFF', '#333'], borderColor: '#121212', borderWidth: 4 }] }, options: { responsive: true, maintainAspectRatio: false, cutout: '70%', plugins: { legend: { display: false } } } });
         gsap.to("#genz-percentage", { textContent: 74, duration: 2, ease: "power1.in", snap: { textContent: 1 }, scrollTrigger: { trigger: "#scene4", start: "top center" } });
@@ -83,7 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
         ScrollTrigger.create({ trigger: "#scene4", start: "top center", end: "bottom center", onToggle: self => gsap.to('[data-genz="true"]', { backgroundColor: self.isActive ? 'var(--accent-color)' : '#333' }) });
     });
 
-    // --- SCENE 5: ANIMASI LATAR & MODAL ---
     safeAnimate(() => {
         const svgNS = "http://www.w3.org/2000/svg";
         const scene5BG = document.getElementById('scene5-bg');
@@ -107,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
         ScrollTrigger.create({ trigger: "#scene5", start: "top 80%", end: "bottom 20%", onToggle: self => gsap.to(svg.querySelectorAll('line'), { opacity: self.isActive ? 0.3 : 0.1, stagger: 0.001 }) });
     });
     
-    // --- MODAL & CHARTS (TETAP SAMA) ---
     const modals = document.querySelectorAll('.modal');
     document.querySelectorAll('.explore-card').forEach(card => { card.addEventListener('click', () => { document.getElementById(card.getAttribute('data-modal')).style.display = 'flex'; }); });
     document.querySelectorAll('.close-button').forEach(button => { button.addEventListener('click', () => { button.closest('.modal').style.display = 'none'; }); });

@@ -4,13 +4,13 @@
 
 Tujuan utamanya adalah bagaimana mengelola data mentah dari survei agar dapat, dianalisis, dan disintesis menjadi *insight* strategis yang dapat ditindaklanjuti.
 
-**[GANTI BAGIAN INI DENGAN GIF DEMO WEBSITE ANDA]**
+**![Demo Website Audio Generation Report](asset/web.gif) **
 
 ---
 
 ## ✨ Demo Live
 
-**[--> Kunjungi Versi Live di Sini <--]([Link-ke-Vercel-atau-GitHub-Pages-Anda])**
+**[--> Kunjungi Versi Live di Sini <--](https://health-hear-analyst-pdnk9q0rm-harryzyns-projects.vercel.app)**
 
 ---
 
@@ -74,5 +74,5 @@ Analisis dari dataset survei menghasilkan beberapa kesimpulan kunci:
 ## 📬 Hubungi Saya
 Terima kasih telah mengunjungi proyek ini.
 
-* **LinkedIn:** `[Link ke Profil LinkedIn Anda]`
-* **Email:** `[Email Anda]`
+* **LinkedIn:** [Link ke Profil LinkedIn](https://www.linkedin.com/in/harry-muzayin-b7758729a/)
+* **Email:** [Email ] (ahmadharry.muzayin@students.esqbs.ac.id)

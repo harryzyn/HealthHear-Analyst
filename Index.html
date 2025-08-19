@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Audio Generation Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="particle-container"></div>
+
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            <section id="scene0" class="scene">
+                <div id="audio-wave-bg" class="background-animation"></div>
+                <div class="content">
+                    <h1 class="prolog-title">The Audio Generation Report</h1>
+                    <p class="prolog-text">Analisis ini didasarkan pada survei publik <a
+                            href="https://www.kaggle.com/datasets/adharshinikumar/2025-hearing-wellness-survey"
+                            target="_blank">2025 Hearing Wellness Survey</a></p>
+                </div>
+            </section>
+
+            <section id="scene1" class="scene">
+                <div id="scene1-bg" class="background-animation"></div>
+                <div class="content">
+                    <h2>Pola: Ritual Harian Kita</h2>
+                    <p>Dari data tersebut, sebuah pola fundamental langsung terlihat. Mayoritas dari kita menghabiskan
+                        <strong>1 hingga 4 jam setiap hari</strong> dengan perangkat audio personal.
+                    </p>
+                    <div class="hours-container">
+                        <div class="hour-block"><span>1 Jam</span></div>
+                        <div class="hour-block"><span>2 Jam</span></div>
+                        <div class="hour-block"><span>3 Jam</span></div>
+                        <div class="hour-block"><span>4 Jam</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="scene2" class="scene">
+                <div id="scene2-bg" class="background-animation"></div>
+                <div class="content">
+                    <h2>Sinyal: Pesan dari Tubuh Kita</h2>
+                    <p>Semakin lama durasi penggunaan, semakin tinggi korelasi dengan ketidaknyamanan fisik. Ini adalah
+                        sinyal biologis yang sering kita abaikan.</p>
+                    <div class="discomfort-visual">
+                        <div class="discomfort-glow"></div>
+                        <svg class="head-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12,1.25A10.75,10.75,0,1,0,22.75,12,10.76,10.76,0,0,0,12,1.25Zm0,20A9.25,9.25,0,1,1,21.25,12,9.26,9.26,0,0,1,12,21.25Zm5.5-9.25a5.4,5.4,0,0,0-4-5.28V8.3a3.84,3.84,0,0,1,2.5,3.52,1.5,1.5,0,0,0,3,0A5.34,5.34,0,0,0,17.5,12Zm-7,0a1.5,1.5,0,0,0,1.5,1.5A1.5,1.5,0,0,0,12,12a1.5,1.5,0,0,0,0-3A1.5,1.5,0,0,0,10.5,12Z" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <section id="scene3" class="scene">
+                <div id="scene3-bg" class="background-animation"></div>
+                <div class="content">
+                    <h2>Hambatan: Dinding yang Tak Terlihat</h2>
+                    <p>Jika sinyalnya ada, mengapa kita tidak bertindak? Ternyata, satu faktor mendominasi yang lain
+                        secara signifikan...</p>
+                    <div class="barrier-cards">
+                        <div class="card" id="card-biaya">
+                            <p>Biaya</p>
+                        </div>
+                        <div class="card" id="card-waktu">
+                            <p>Waktu</p>
+                        </div>
+                        <div class="card main-barrier" id="card-kesadaran">
+                            <p>Kurang Kesadaran & Prioritas</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="scene4" class="scene">
+                <div id="scene4-bg" class="background-animation"></div>
+                <div class="content-split">
+                    <div class="text-content">
+                        <h2>Fokus Generasi: Suara Gen Z</h2>
+                        <p>Sebelum melangkah lebih jauh, penting untuk memahami siapa yang berbicara dalam data ini.
+                            Sekitar <span class="highlight" id="genz-percentage">0%</span> dari responden kami adalah
+                            <strong>Gen Z (usia 18-24 tahun)</strong>.
+                        </p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="genZChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section class="scene scene-transition">
+                <div class="content">
+                    <p class="transition-text">Setelah mengetahui <strong>siapa</strong> audiens kita dan
+                        <strong>apa</strong> hambatannya, kini saatnya menggali lebih dalam: <strong>Apa yang sebenarnya
+                            mereka inginkan dari sebuah solusi?</strong>
+                    </p>
+                </div>
+            </section>
+
+            <section id="scene5" class="scene">
+                <div id="scene5-bg" class="background-animation"></div>
+                <div class="content">
+                    <h2>Eksplorasi Mendalam: Segmen & Motivasi</h2>
+                    <div class="explore-cards">
+                        <div class="explore-card" data-modal="modal1">
+                            <h3>Antara Fokus dan Hiburan</h3>
+                        </div>
+                        <div class="explore-card" data-modal="modal2">
+                            <h3>Bagaimana Rasa Sakit Mempengaruhi Pilihan Fitur?</h3>
+                        </div>
+                        <div class="explore-card" data-modal="modal3">
+                            <h3>Penggerak Emosional: FOMO</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="scene6" class="scene">
+                <div class="content">
+                    <h2>Rangkuman & Implikasi Strategis</h2>
+                    <p class="summary-points">
+                        <span class="summary-highlight">Gen Z hidup di dunia digital setiap harinya</span>, dan tubuh
+                        kita selalu punya sinyal peringatan. Hambatan terbesar bukanlah uang atau waktu,
+                        melainkan <span class="summary-highlight">kesadaran dan prioritas yang rendah</span>. Minat
+                        terhadap solusi digital diinginkan karena yaa sekarang kehidupan kita bersanding dengan digital
+                        yang dimana jika ada apps akan sangat bergantung pada <span class="summary-highlight">kemudahan
+                            penggunaan dan nilai yang jelas</span>.
+                    </p>
+                    <p class="implication"><strong>Implikasi:</strong> Data ini mengindikasikan bahwa solusi paling
+                        efektif adalah yang terintegrasi dalam ekosistem digital mereka sebuah aplikasi kesehatan
+                        pendengaran yang proaktif, instan, dan visual.</p>
+                </div>
+            </section>
+            <footer class="scene">
+                <a href="https://github.com/harryzyn/HealthHear-Analyst" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <svg class="github-icon" viewBox="0 0 16 16" version="1.1" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                        </path>
+                    </svg>
+                    <span>Lihat Proyek di GitHub</span>
+                </a>
+            </footer>
+        </div>
+    </main>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content"><span class="close-button">&times;</span>
+            <h3>Motivasi Penggunaan</h3>
+            <p>Intinya: Rasa tidak nyaman di telinga adalah masalah universal, terjadi pada semua orang tidak peduli
+                motivasi atau durasi penggunaannya.</p><canvas id="motivasiChart"></canvas>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content"><span class="close-button">&times;</span>
+            <h3>Segmentasi: antara yang merasa dan tidak</h3>
+            <p>Intinya: Rasa sakit adalah motivator terkuat. Grafik ini membandingkan minat fitur antara mereka yang
+                merasakan nyeri dengan yang tidak . Kelompok "merasa" jelas menunjukkan keinginan lebih
+                tinggi untuk fitur-fitur proaktif.</p><canvas id="segmentasiChart"></canvas>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content"><span class="close-button">&times;</span>
+            <h3>Faktor Psikologis: FOMO</h3>
+            <p>Intinya: Ada pendorong emosional di balik minat pada aplikasi ini. Semakin sering seseorang merasa takut
+                ketinggalan (FOMO), semakin tinggi minat mereka pada solusi digital.</p><canvas id="fomoChart"></canvas>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
